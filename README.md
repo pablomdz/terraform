@@ -1,2 +1,2 @@
 # terraform
-Creacion de AMI en AWS, conexion ssh y aprovisionamiento basico
+Creacion de AMI en AWS, conexion ssh y aprovisionamiento basico V1
