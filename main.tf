@@ -47,9 +47,7 @@ resource "aws_instance" "proyecto" {
       }
       inline = [
           "sudo apt-get -y update",
-          "sudo apt-get -y install docker",
-          "sudo service nginx docker",
-        ]
+      ]
     }
     
 }
