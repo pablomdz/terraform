@@ -26,3 +26,6 @@ variable "egress_rules"{
 variable "rsa_public"{
 
 }
+variable "maquinas"{
+
+}

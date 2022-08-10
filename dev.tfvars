@@ -1,6 +1,7 @@
 ami_id = "ami-088afbba294231fe0"
 instance_type = "t2.nano"
-tags = {Name="pratica1", Enviroment="Dev"}
+tags = {name="Terraform", enviroment="Dev"}
+maquinas="3"
 sg_name = "rules_ssh"
 ingress_rules = [
     {

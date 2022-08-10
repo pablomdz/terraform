@@ -30,10 +30,15 @@ resource "aws_key_pair" "ssh-key" {
 }    
 
 resource "aws_instance" "proyecto" {
+    count = var.maquinas
     # ami = "ami-01715ada337e1f5d3"
     ami = var.ami_id
     instance_type = var.instance_type
-    tags = var.tags
+    tags ={
+      Name= "${var.tags.name}-${count.index}"
+      enviroment= var.tags.enviroment
+    }
+
     security_groups = ["${aws_security_group.ssh_connection.name}"]
     #se crea el provisioner para conectarse de forma remota.
     key_name = "ssh-key"
